@@ -6,6 +6,8 @@ CPPFLAGS = -g -W -Wall -Werror -std=c++11 -Weffc++ -Wextra -pedantic
 LDFLAGS = 
 
 OBJS = \
+	obj/Game.o \
+	obj/Game_Factory.o \
 	obj/Main.o \
 	obj/Season.o \
 	obj/Season_Factory.o \
