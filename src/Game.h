@@ -5,6 +5,7 @@
 #define REGULAR 0
 #define PLAYOFF 1
 #define CHMPSHP 2
+#define CONSLTN 3
 
 class Game
 {
