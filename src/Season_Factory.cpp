@@ -44,3 +44,15 @@ std::vector<Season*> Season_Factory::get_seasons()
     return (seasons);
 }
 
+std::string Season_Factory::get_team_name(int y, int t)
+{
+    for (auto* s : seasons)
+    {
+        if (y == s->get_year() && t == s->get_team())
+        {
+            return (s->get_name());
+        }
+    }
+    return (NULL);
+}
+

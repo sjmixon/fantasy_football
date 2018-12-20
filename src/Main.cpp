@@ -2,6 +2,8 @@
 #include <iostream>
 #include <vector>
 
+#include "Game.h"
+#include "Game_Factory.h"
 #include "Season.h"
 #include "Season_Factory.h"
 #include "Team.h"
@@ -9,27 +11,15 @@
 
 int main(int, char**)
 {
-    std::vector<Team*> teams = Team_Factory::get_instance().get_teams();
-    std::vector<Season*> seasons =
-            Season_Factory::get_instance().get_seasons();
-    for (auto* t : teams)
+    for (auto* g : Game_Factory::get_instance().get_games())
     {
-        std::cout << t->get_id() << " " << t->get_owner() << std::endl;
-    }
-    for (auto* s : seasons)
-    {
-        std::cout << s->get_year() << " " << s->get_team() << " " <<
-                s->get_place() << " " << s->get_name() << std::endl;
-    }
-    for (auto* s : seasons)
-    {
-        for (auto* t : teams)
-        {
-            if (s->get_team() == t->get_id())
-            {
-                std::cout << t->get_owner() << ": " << s->get_name() << std::endl;
-            }
-        }
+        int y = g->get_year();
+        std::cout << y << " Week " << g->get_week() << ": " <<
+                Season_Factory::get_instance().get_team_name(y,
+                g->get_teams()[0]) << " vs. " <<
+                Season_Factory::get_instance().get_team_name(y,
+                g->get_teams()[1]) <<
+                std::endl;
     }
     return (0);
 }
