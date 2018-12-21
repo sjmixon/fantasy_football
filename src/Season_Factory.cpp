@@ -53,6 +53,6 @@ std::string Season_Factory::get_team_name(int y, int t)
             return (s->get_name());
         }
     }
-    return (NULL);
+    return (std::string(""));
 }
 

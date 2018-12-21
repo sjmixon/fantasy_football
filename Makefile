@@ -9,6 +9,8 @@ OBJS = \
 	obj/Game.o \
 	obj/Game_Factory.o \
 	obj/Main.o \
+	obj/Player.o \
+	obj/Player_Factory.o \
 	obj/Season.o \
 	obj/Season_Factory.o \
 	obj/Team.o \

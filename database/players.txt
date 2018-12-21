@@ -1,0 +1,22 @@
+00000 WR Davante Adams
+00001 RB Josh Adams
+00002 WR Nelson Agholor
+00003 WR Keenan Allen
+00004 WR Danny Amendola
+00005 WR Doug Baldwin
+00006 RB Peyton Barber
+00007 RB Saquon Barkley
+00008 WR Odell Beckham Jr.
+00009 RB Le'Veon Bell
+00010 RB Giovani Bernard
+00011 WR Tyler Boyd
+00012 QB Tom Brady
+00013 QB Drew Brees
+00014 RB Matt Breida
+00015 WR Antonio Brown
+00016 K Matt Bryant
+00017 TE Trey Burton
+00018 K Harrison Butker
+00019 RB Chris Carson
+00020 RB Nick Chubb
+000

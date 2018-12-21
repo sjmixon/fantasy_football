@@ -4,6 +4,8 @@
 
 #include "Game.h"
 #include "Game_Factory.h"
+#include "Player.h"
+#include "Player_Factory.h"
 #include "Season.h"
 #include "Season_Factory.h"
 #include "Team.h"
@@ -20,6 +22,10 @@ int main(int, char**)
                 Season_Factory::get_instance().get_team_name(y,
                 g->get_teams()[1]) <<
                 std::endl;
+    }
+    for (auto* p : Player_Factory::get_instance().get_players())
+    {
+        std::cout << p->get_name() << ", " << p->get_position() << std::endl;
     }
     return (0);
 }
